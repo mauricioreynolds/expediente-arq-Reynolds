@@ -53,3 +53,5 @@ El Después  <br/>
 <img width="930" height="568" alt="Captura de pantalla 2026-09-01 215928" src="https://github.com/user-attachments/assets/3002fe28-c067-4198-9ac9-b9fd2043a17a" />
 
 
+# New Peligrosos.
+<img width="625" height="658" alt="Captura de pantalla 2026-09-03 203046" src="https://github.com/user-attachments/assets/4291a85f-b694-47a0-94e4-5706497f5936" />
