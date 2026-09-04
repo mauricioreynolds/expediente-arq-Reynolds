@@ -55,3 +55,20 @@ El Después  <br/>
 
 # New Peligrosos.
 <img width="625" height="658" alt="Captura de pantalla 2026-09-03 203046" src="https://github.com/user-attachments/assets/4291a85f-b694-47a0-94e4-5706497f5936" />
+
+# Diagrama Antes Y Después.
+Antes <br/>
+
+<img width="755" height="665" alt="Captura de pantalla 2026-09-03 214013" src="https://github.com/user-attachments/assets/3f71ce97-8db4-482f-9092-eb5b7101939b" /> <br/>
+
+Después <br/>
+
+<img width="1251" height="585" alt="Captura de pantalla 2026-09-03 214037" src="https://github.com/user-attachments/assets/5e3c4396-c659-4182-b3fb-2b13956cd3a1" /><br/>
+
+Separé la clase gorda GestorCobranza en varias partes pequeñas para que una sola clase no haga todo el trabajo junta (SRP).
+
+Saqué el cálculo de recargos de la clase padre y creé la interfaz IMorable para que las cuotas en promoción no den error al no cobrar mora (LSP).
+
+Dividí las funciones en dos interfaces separadas (IGeneradorEnlace y ICondonadorMora) para que un operador no tenga funciones de supervisor que no puede usar (ISP).
+
+Hice que el gestor dependa de la interfaz IRepositorioCuota en vez de conectarse directo a SQL, así puedo hacer pruebas sin la base de datos real (DIP).
