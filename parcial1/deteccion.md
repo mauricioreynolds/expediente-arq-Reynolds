@@ -1,4 +1,4 @@
-# Detección de Violaciones SOLID - Parcial 1
+# Detección de Violaciones SOLID - Parcial 1 Hecho en Markdown, ahi funciona la tabla y se ve correcto
 
 | Principio Violado | Dónde vive (Clase y Método) | Por qué es una violación |
 | :--- | :--- | :--- |
