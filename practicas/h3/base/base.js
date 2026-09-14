@@ -11,7 +11,6 @@ class RepositorioCuota {
         console.log(`[BD] Cuota ${cuota.id} guardada para ${cuota.cliente}.`);
     }
 }
-
 class GestorCobranza {
     constructor() {
         this._repo = new RepositorioCuota();
@@ -22,7 +21,6 @@ class GestorCobranza {
         console.log(`[PAGO] Procesado por ${cuota.monto} Bs.`);
     }
 }
-
 const cuotaBase = new Cuota(1, 100, "Gustavo Toledo");
 const gestor = new GestorCobranza();
 gestor.procesarPago(cuotaBase);

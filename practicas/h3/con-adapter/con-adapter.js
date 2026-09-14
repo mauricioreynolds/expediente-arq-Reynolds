@@ -4,7 +4,6 @@ class PasarelaPagoExterna {
         return true;
     }
 }
-
 class PasarelaPagoAdapter {
     constructor() {
         this._externo = new PasarelaPagoExterna();
@@ -15,6 +14,5 @@ class PasarelaPagoAdapter {
         return this._externo.executeTransaction("TOKEN-123", centavos);
     }
 }
-
 const adaptador = new PasarelaPagoAdapter();
 adaptador.cobrarCuota(150.50);

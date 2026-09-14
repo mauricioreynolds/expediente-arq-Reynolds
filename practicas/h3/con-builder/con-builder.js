@@ -38,7 +38,6 @@ class PlanCobranzaBuilder {
         return this._plan;
     }
 }
-
 const builder = new PlanCobranzaBuilder();
 const miPlan = builder
     .establecerMontoBase(500)
