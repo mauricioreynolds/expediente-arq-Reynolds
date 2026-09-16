@@ -9,3 +9,10 @@
 ### Situación 3: Patrón Adapter
 * **Patrón elegido:** Adapter.
 * **Justificación:** Actua como un traductor entre el dominio interno de la biblioteca y el servicio externo del Sistema Estatal de Bibliotecas (`PushRecord`). Sin este patrón, el sistema tendría que acoplarse diretamente a formatos en inglés y estructuras de fechas externas sin poder ser modificables. Si el serviciio externo cambia de versión, el cambio se aísla únicamente dentro del adaptador sin romperse.
+
+
+## P2.3 Conexión SOLID (Para la Situación 2 - Strategy)
+
+* **Principio SOLID rescatado:** Principio de Abierto/Cerrado (Open/Closed Principle) y Principio de Responsabilidad Única (Single Responsibility Principle).
+* **Demostración en código:** En `solucion.js`, el `GestorMultasContext`que es la clase en la linea de codigo numoer 28, está cerrado a modificaciones pero abierto a extensiones.
+Si el concejo municipal crea una nueva regla de multa, no modificamos el contexto ni los `if/else` existentes, simplemente creamos una nueva clase que calcule la multa y se la pasamos al contexto en la linea donde usamos `calcularMultaTotal()` en la line de codgio 38, pero se ejcuta en la linea de codigo numeor 39 `return this.estrategia.calcularMulta(diasAtraso);`. Ademas que se tiene que cada estrategia tiene la única responsabilidad de calcular su tarifa correspondiente.
