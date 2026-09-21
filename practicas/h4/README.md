@@ -17,8 +17,7 @@ flowchart TD
     A[Agente / Administrador] -->|Usa la interfaz| B[Aplicación Web / Front<br>Pantallas de cobro y préstamos]
     
     subgraph SISTEMA DE COBRANZA DE PRÉSTAMOS
-        B -->|Peticiones HTTP| C[API Backend Node.js<br>Lógica de Negocio<br>Aquí aplicamos
-         Decorator y Strategy]
+        B -->|Peticiones HTTP| C[API Backend Node.js<br>Lógica de Negocio<br>Aquí aplicamos Decorator y Strategy]
         C -->|Guarda transacciones| D[(Base de Datos PostgreSQL<br>Préstamos, cuotas, historial)]
         C -->|Publica eventos de cobro| E[Servicio de Avisos / Notificador<br>Observer]
     end
